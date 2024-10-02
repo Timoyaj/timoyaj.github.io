@@ -1,0 +1,27 @@
+
+.w3-opacity {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+}
+
+.w3-padding {
+    padding: 8px; /* Adds padding inside the overlay for spacing */
+}
+.w3-padding-16 { padding: 16px; }
+.w3-margin-top { margin-top: 16px; }
+
+.w3-text-teal { color: #009688; }
+.w3-opacity { opacity: 0.76; }
+
+@media (max-width: 768px) {
+    .w3-display-container img {
+        height: auto;
+    }
+
+    .w3-display-bottomleft {
+        font-size: 14px; /* Smaller text on smaller screens */
+    }
+
+    .about-text {
+        font-size: 14px; /* Adjust based on screen size */
+    }
+}

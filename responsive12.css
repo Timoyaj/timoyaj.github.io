@@ -61,6 +61,21 @@
     .experience-content, .education-content, .certifications-content, .skills-content { 
         padding: 2rem; 
     }
+
+    .skills-content { 
+        flex-direction: column; 
+    }
+
+    .skills-content .skills-column { 
+        width: 100%; 
+        padding: 0.5rem 0; 
+    }
+
+    .profile-picture {
+        width: 200px;
+        height: 250px;
+        margin: 0 auto;
+    }
 } 
 
 /* CSS for mobile devices */
@@ -151,6 +166,15 @@
         padding: 1rem; 
     }
 
+    .skills-content { 
+        flex-direction: column; 
+    }
+
+    .skills-content .skills-column { 
+        width: 100%; 
+        padding: 0.5rem 0; 
+    }
+
     .contact-content { 
         flex-direction: column; 
         align-items: center; 
@@ -179,5 +203,11 @@
 
     .footer-list-items { 
         margin: 0; 
-    } 
+    }
+
+    .profile-picture {
+        width: 150px;
+        height: 200px;
+        margin: 0 auto;
+    }
 }

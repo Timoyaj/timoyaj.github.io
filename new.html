@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>YAJI TIMOTHY</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        html, body, h1, h2, h3, h4, h5, h6 {font-family: "Roboto", sans-serif}
+        .menu-list-items a {
+            text-decoration: none;
+            color: white; /* Adjust based on your design */
+            padding: 8px 16px;
+            display: block;
+        }
+        .portfolio-item {
+            display: none; /* Initially hide all items */
+            width: 100%; /* Full width */
+        }
+        .portfolio-item img {
+            width: 100%; /* Full width */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .portfolio-item img {
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            object-fit: cover; /* Cover the container without losing aspect ratio */
+            transition: transform 0.5s ease; /* Smooth transformation for zoom effect */
+        }
+        .portfolio-details {
+            position: absolute;
+            bottom: 0;
+            background-color: rgb(8, 68, 68); /* Dark overlay for text readability */
+            color: white;
+            width: 100%;
+            padding: 10px;
+            display: none; /* Initially hide details */
+        }
+        .portfolio-item:hover .portfolio-details {
+            display: block; /* Show details on hover */
+        }
+    </style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Top Navigation Bar -->
+<header class="w3-top w3-bar w3-teal">
+    <a href="#" class="w3-bar-item w3-button">Timothy Yaji</a>
+    <div class="w3-right">
+        <a href="#home" class="w3-bar-item w3-button">Home</a>
+        <a href="#about" class="w3-bar-item w3-button">About</a>
+        <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+</header>
+<hr>
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+    <!-- Profile Section with Enhanced About Overlay -->
+    <hr>
+    <div class="w3-white w3-row-padding w3-text-grey w3-card-4">
+        <div class="w3-row">
+          <div class="w3-col s3">
+            <div class="w3-display-container">
+                <img src="./Images/compaira 3.jpg" style="width:100%; position:inherit; border: 5px solid teal; /* Set border width and color */
+  border-radius: 10px" alt="Avatar">
+                
+            </div>
+          </div>
+          <div class="w3-col s8">
+            <div class="w3-container">
+              <h2>Hi, I am Timothy Yaji</h2>
+              <p class="about-text" style="font-size: 16px;">A passionate Data Analyst with expertise in statistical analysis, data visualization, and machine learning. My work focuses on delivering actionable insights and automating business processes to enhance efficiency.</p>
+              <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Welcome to my portfolio. I am Yaji Timothy Terungwa, a passionate Data Scientist, Web Developer, and Lecturer. My mission is to empower businesses with advanced analytics, custom web applications, and comprehensive digital services to drive growth and success.
+
+                With a strong background in statistics and computer science, I have extensive experience in data analysis, web development, and project management. I am committed to delivering high-quality solutions that meet the unique needs of each client.</p>
+              
+          </div>
+        </div>
+      </div>
+      
+    <!-- The Grid -->
+    <div class="w3-row-padding">
+        
+        <!-- Left Column -->
+        <div class="w3-third">
+        
+            <div class="w3-margin-top-white w3-text-grey w3-card-4">
+                
+                <div class="w3-container">
+                    <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Data Analyst</p>
+                    <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Benue, Nigeria</p>
+                    <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>tertimothymail.com</p>
+                    <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+2347062439948</p>
+                    <hr>
+                    <p class="w3-large w3-text-theme"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+                    <p>Data Analysis</p>
+                    <div class="w3-light-grey w3-round-">
+                        <div class="w3-round-large w3-teal" style="height:24px;width:90%"></div>
+                    </div>
+                    <p>Machine Learning</p>
+                    <div class="w3-light-grey w3-round-large">
+                        <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
+                    </div>
+                    <p>Web Development</p>
+                    <div class="w3-light-grey w3-round-xlarge">
+                        <div class="w3-round-xlarge w3-teal" style="height:24px;width:75%"></div>
+                    </div>
+                    <p>Data Visualization</p>
+                    <div class="w3-light-grey w3-round-xlarge">
+                        <div class="w3-round-xlarge w3-teal" style="height:24px;width:65%"></div>
+                    </div>
+                    <hr>
+                    <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+                    <p>English</p>
+                    <div class="w3-light-grey w3-round-xlarge">
+                        <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+                    </div>
+                    <p>Tiv</p>
+                    <div class="w3-light-grey w3-round-xlarge">
+                        <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+                    </div>
+                    <p>Yoruba</p>
+                    <div class="w3-light-grey w3-round-xlarge">
+                        <div class="w3-round-xlarge w3-teal" style="height:24px;width:15%"></div>
+                    </div>
+                   
+                <div class="w3-container w3-padding-32" id="contact">
+                    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact Me</h3>
+                    <p>Lets get in touch and talk about your next project.</p>
+                    <form action="/submit_your_form_handler" method="POST">
+                        <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+                        <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+                        <textarea class="w3-input w3-section w3-border" placeholder="Comment" required name="Comment"></textarea>
+                        <button class="w3-button w3-black w3-section" type="submit">
+                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                        </button>
+                    </form>
+                </div>
+
+                    <br>
+                </div>
+                
+            </div><br>
+
+        <!-- End Left Column -->
+        </div>
+
+        <!-- Right Column -->
+        <div class="w3-twothird">
+            <!-- client projects -->
+            <div class="w3-content w3-margin-top" style="max-width:1400px;">
+                <div class="w3-container w3-card w3-white w3-margin-top">
+                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-briefcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Portfolio</h2>
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item" style="display:block;">
+                            <img src="./Images/Power BI Project.jpg" alt="Project 1">
+                            <div class="portfolio-details">
+                              <h3>Project 1</h3>
+                              <p>This projest is for the development of beneue state in oder to love care and mate1</p>
+                            </div>
+                          </div>
+                          <div class="portfolio-item">
+                            <img src="./Images/intro.jpg" alt="Project 2">
+                            <div class="portfolio-details">
+                              <h3>Project 2</h3>
+                              <p>Description of Project 2</p>
+                            </div>
+                          </div>
+                          <div class="portfolio-item">
+                            <img src="./Images/Power BI Project.jpg" alt="Project 3">
+                            <div class="portfolio-details">
+                              <h3>Project 3</h3>
+                              <p>Description of Project 3</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+              
+             <!-- Work Experience Section -->
+            <div class="w3-container w3-card w3-white w3-margin-top">
+                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Data Scientist / TrafficCovert.ai</b></h5>
+                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2023 – Present</h6>
+                    <p>Role focuses on building Python Analytics WebApps using Streamlit and Dash-Plotly, implementing data-driven solutions, and automating business processes.</p>
+                    <hr>
+                </div>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Project Statistician / Benue SFTAS</b></h5>
+                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2021 – December 2023</h6>
+                    <p>Designed working shape files that qualified Benue for a $2.5m World Bank grant. Supported technical training and field data collection using QGIS/QFIELD apps.</p>
+                    <hr>
+                </div>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Volunteer Market Researcher / Compaira</b></h5>
+                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2022 – September 2022</h6>
+                    <p>Engaged in research and content creation focusing on diversity and inclusion within the workforce. Utilized networking and social media to enhance company's talent base across the UK.</p>
+                    <br>
+                </div>
+            </div>
+
+            <!-- Education -->
+             <!-- Education Section -->
+            <div class="w3-container w3-card w3-white w3-margin-top">
+                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Ph.D. Statistics (in view)</b></h5>
+                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2018 - Present</h6>
+                    <p>University Of Agriculture Makurdi, Benue-Nigeria</p>
+                    <p>Focus: Estimation of Population Characteristics using Multi-auxiliary Two Phase Sampling with Multiple Imputation.</p>
+                    <hr>
+                </div>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>M.Sc. Statistics</b></h5>
+                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2013 - December 2016</h6>
+                    <p>University Of Agriculture Makurdi, Benue-Nigeria</p>
+                    <p>Thesis: Application of Jackknife Method for Imputing Censored Data from Log-Logistic Distribution.</p>
+                    <hr>
+                </div>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>B.Sc. Statistics/Computer Science</b></h5>
+                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September 2006 - December 2010</h6>
+                    <p>University Of Agriculture Makurdi, Benue-Nigeria</p>
+                    <br>
+                </div>
+            </div>
+         
+        <!-- Certifications Section -->
+        <div class="w3-container w3-card w3-white w3-margin-top">
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Certifications</h2>
+            <div class="w3-container">
+                <h5 class="w3-opacity"><b>Data Analyst Nano-Degree</b></h5>
+                <p>ALX-Udacity - November 2022</p>
+                <hr>
+            </div>
+            <div class="w3-container">
+                <h5 class="w3-opacity"><b>Planning for Monitoring and Evaluation</b></h5>
+                <p>Philanthropy University - November 2020</p>
+                <hr>
+            </div>
+            <div class="w3-container">
+                <h5 class="w3-opacity"><b>The Fundamentals of Digital Marketing</b></h5>
+                <p>Google Digital Garage - October 2020</p>
+                <hr>
+            </div>
+            <div class="w3-container">
+                <h5 class="w3-opacity"><b>Jobberman Certified Soft Skills</b></h5>
+                <p>Coursera - September 2021</p>
+                <br> <!-- Use <br> if necessary to ensure consistent spacing -->
+            </div>
+        </div>
+
+        <!--Professional Affiliation--> 
+        <!-- Professional Affiliations Section -->
+        <div class="w3-container w3-card w3-white w3-margin-top">
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-users fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Professional Affiliations</h2>
+            <div class="w3-container">
+                <h5 class="w3-opacity"><b>Nigerian Statistical Association (NSA)</b></h5>
+                <p>Member</p>
+                <hr>
+            </div>
+            <div class="w3-container">
+                <h5 class="w3-opacity"><b>International Association of Statistical Computing (IASC)</b></h5>
+                <p>Member</p>
+                <hr>
+            </div>
+            <div class="w3-container">
+                <h5 class="w3-opacity"><b>Geoinformatics Society of Nigeria (GEOSON)</b></h5>
+                <p>Member</p>
+                <br> <!-- Use <br> if necessary to ensure consistent spacing -->
+            </div>
+        </div>
+        
+
+        <!-- End Right Column -->
+        </div>
+        
+    <!-- End Grid -->
+    </div>
+    
+    <!-- End Page Container -->
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const items = document.querySelectorAll('.portfolio-item');
+        console.log("Number of portfolio items found:", items.length); // Should show the correct count of items
+    
+        if (items.length === 0) {
+            console.error("No portfolio items found. Check your HTML structure and class names.");
+            return; // Stop the function if no items found
+        }
+    
+        let currentIndex = 0;
+        items[currentIndex].style.display = 'block'; // Ensure the first item is visible
+    
+        function showNextItem() {
+            console.log("Current index before change:", currentIndex); // Log current index
+            items[currentIndex].style.display = 'none'; // Hide current item
+            currentIndex = (currentIndex + 1) % items.length; // Move to next item cyclically
+            items[currentIndex].style.display = 'block'; // Show next item
+            console.log("Current index after change:", currentIndex); // Log new index
+        }
+    
+        let interval = setInterval(showNextItem, 3000);
+    
+        document.querySelector('.portfolio-grid').addEventListener('mouseover', () => {
+            console.log("Mouseover detected. Interval cleared."); // Log mouseover
+            clearInterval(interval);
+        });
+    
+        document.querySelector('.portfolio-grid').addEventListener('mouseout', () => {
+            console.log("Mouseout detected. Interval set."); // Log mouseout
+            interval = setInterval(showNextItem, 3000);
+        });
+    });
+</script>
+    
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+    <p>Find me on social media.</p>
+    <i class="fa fa-facebook-official w3-hover-opacity" a href="https://Datateryaj.net.ng></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>  
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p>Powered by <a href="https://Datateryaj.net.ng" target="_blank">Datateryaj</a></p>
+</footer>
+
+</body>
+</html>
